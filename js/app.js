@@ -97,7 +97,7 @@ var Player = function() {
 // Check if playerLives is 0, if so call reset
 Player.prototype.update = function() {
     if (this.playerLives === 0) {
-    // clearTimeout(heart.heartWaitTime);
+    clearTimeout(heart.heartWaitTime);
     reset();
     }
 };
