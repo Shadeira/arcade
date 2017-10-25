@@ -1,18 +1,17 @@
 frontend-nanodegree-arcade-game
 ===============================
 
-https://shadeira.github.io/arcade/
+
 
  
 
 How To Play : 
 
-Use the the arrows on your keyboard to move your player.
-Avoid the bugs and get to the other side of the water as many times as you can.
-You have 3 lives. 
+Use the arrow keys to move the player across the board. To win you need to reach water, but avoid colliding with the bugs.
 
 
 
+Click Here to play : https://shadeira.github.io/arcade/
 
 
 
