@@ -12,7 +12,7 @@ Use the arrow keys to move the player across the board. To win you need to reach
 
 
 Click Here to play : https://shadeira.github.io/arcade/
-
+ 
 
 
 
