@@ -95,8 +95,9 @@ var Player = function() {
 
 // Required method for game
 // Check if playerLives is 0, if so call reset
-  Player.prototype.characterReset = function()
+  Player.prototype.update = function() {
     if (this.playerLives === 0){
+    }
   
   
 };
