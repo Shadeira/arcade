@@ -97,12 +97,8 @@ var Player = function() {
 // Check if playerLives is 0, if so call reset
   Player.prototype.characterReset = function()
     if (this.playerLives === 0){
-        this.startingX = 200;
-    this.startingY = 400;
-    this.x = this.startingX;
-    this.y = this.startingY;
-    reset();
-    }
+  
+  
 };
 
 // Resets the player position to the start position
