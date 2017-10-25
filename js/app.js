@@ -84,12 +84,11 @@ Enemy.prototype.collisionDetected = function() {
 // Start the player at 200x by 400y
 // credit https://discussions.udacity.com/t/need-help-refactoring/32466
 var Player = function() {
-    "use strict";
     this.startingX = 200;
     this.startingY = 400;
     this.x = this.startingX;
     this.y = this.startingY;
-    this.sprite = 'images/char-horn-girl.png';
+    this.sprite = 'images/char-pink-girl.png';
     this.playerScore = 0;
     this.playerLives = 3;
 };
