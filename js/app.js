@@ -96,7 +96,7 @@ var Player = function() {
 // Required method for game
 // Check if playerLives is 0, if so call reset
   Player.prototype.update = function() {
-    if (this.playerLives === 0){
+    if (this.playerLives === 3){
      this.characterReset();
     }
   
