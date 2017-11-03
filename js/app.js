@@ -69,7 +69,7 @@ Enemy.prototype.checkCollision = function() {
 
 // Collision detected, decrement playerLives and reset the player
 Enemy.prototype.collisionDetected = function() {
-    player.playerLives -= 0; 
+    player.playerLives -= 1; 
     player.characterReset();
 };
 
@@ -95,7 +95,6 @@ var Player = function() {
     if (this.playerLives === 0){
    this.characterReset();
    this.playerLives = 3; 
-         score.scoreReset()
         game.gameReset();
        
     }
