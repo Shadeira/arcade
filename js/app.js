@@ -98,6 +98,7 @@ var Player = function() {
   Player.prototype.update = function() {
     if (this.playerLives === 0){
    this.characterReset();
+        game.gamereset();
    this.playerLives = 3;  
     }
   
