@@ -196,7 +196,7 @@ for (var i = 0; i < 3; i++) {
 var input = function(e) {
     var allowedKeys = {
         37: 'left',
-        38: 'up',
+        38: 'up', 
         39: 'right',
         40: 'down'
     };
