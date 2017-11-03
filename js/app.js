@@ -99,8 +99,8 @@ var Player = function() {
     if (this.playerLives === 0){
    this.characterReset();
    this.playerLives = 3; 
-        game.gamereset();
-        score.scorerest();
+        game.gameReset();
+        score.scoreReset();
     }
   
   
