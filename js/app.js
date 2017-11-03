@@ -1,5 +1,3 @@
-/*----------------------------------------------------------------------------*/
-/*-----------------------------Enemy------------------------------------------*/
 
 // Enemies our player must avoid
 var Enemy = function(x,y,speed) {
@@ -8,6 +6,7 @@ var Enemy = function(x,y,speed) {
     this.x = x;
     this.y = y;
     this.speed = speed;
+    
     // The image/sprite for our enemies, this uses
     // a helper we've provided to easily load images
     this.sprite = 'images/enemy-bug.png';
@@ -75,9 +74,6 @@ Enemy.prototype.collisionDetected = function() {
 };
 
 
-/*----------------------------------------------------------------------------*/
-/*------------------------------Player----------------------------------------*/
-
 // Now write your own player class
 // This class requires an update(), render() and
 // a handleInput() method.
@@ -98,9 +94,10 @@ var Player = function() {
   Player.prototype.update = function() {
     if (this.playerLives === 0){
    this.characterReset();
+         score.scoreReset();
    this.playerLives = 3; 
         game.gameReset();
-        score.scoreReset();
+       
     }
   
   
@@ -159,12 +156,6 @@ Player.prototype.handleInput = function(allowedKeys) {
     }
 };
 
-/*----------------------------------------------------------------------------*/
-/*-------------------------Instantiate Objects--------------------------------*/
-
-// Now instantiate your objects.
-// Place all enemy objects in an array called allEnemies
-// Place the player object in a variable called player
 
 // Instantiate player
 var player = new Player();
@@ -181,8 +172,6 @@ for (var i = 0; i < 3; i++) {
 }
 
 
-/*----------------------------------------------------------------------------*/
-/*---------------------------Event Listener-----------------------------------*/
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
@@ -191,7 +180,6 @@ for (var i = 0; i < 3; i++) {
  * during "startGame" and "gameOver." Before, the event listener was active
  * during those states, so pressing arrow keys changed the starting position
  * of the player when we switched to "inGame"
- * credit http://stackoverflow.com/questions/4950115/removeeventlistener-on-anonymous-functions-in-javascript
  */
 var input = function(e) {
     var allowedKeys = {
